@@ -5,5 +5,7 @@ This project is part of my Web Development Internship at Prodigy Infotech. In Ta
 Features:
 
 ✅ Start, Stop & Reset buttons
+
 ✅ Responsive design
+
 ✅ Clean UI & easy to use
