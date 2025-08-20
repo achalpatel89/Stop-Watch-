@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="first.css">
+</head>
+<style>
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f9;
+      font-family: Arial, sans-serif;
+    }
+    .stopwatch {
+      text-align: center;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    #display {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .start { background: #28a745; color: white; }
+    .pause { background: #ffc107; color: white; }
+    .reset { background: #dc3545; color: white; }
+    .lap { background: #007bff; color: white; }
+    ul {
+      margin-top: 20px;
+      padding: 0;
+      list-style: none;
+    }
+    ul li {
+      background: #f1f1f1;
+      margin: 5px 0;
+      padding: 8px;
+      border-radius: 6px;
+    }
+</style>
+<body>
+
+  <div class="stopwatch">
+    <div id="display">00:00:00</div>
+    <button class="start" onclick="start()">Start</button>
+    <button class="pause" onclick="pause()">Pause</button>
+    <button class="reset" onclick="reset()">Reset</button>
+    <button class="lap" onclick="lap()">Lap</button>
+    <ul id="laps"></ul>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+
+</body>
+</html>
